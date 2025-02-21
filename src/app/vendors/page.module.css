@@ -1,0 +1,30 @@
+.vendor-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .vendor-table th,
+  .vendor-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .vendor-table th {
+    background-color: #0070f3;
+    color: white;
+  }
+  
+  .vendor-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .delete-button {
+    background-color: #ff4d4d;
+    margin-left: 10px;
+  }
+  
+  .delete-button:hover {
+    background-color: #cc0000;
+  }

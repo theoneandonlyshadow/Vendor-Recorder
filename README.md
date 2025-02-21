@@ -10,3 +10,6 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 - `npm run build` to build the app before running.
 - `npm start` to run the app.
 - visit `http://localhost:3000` in the browser.
+
+## working result will look like
+![alt text](https://github.com/theoneandonlyshadow/vendor-recorder/blob/master/1.jpg?raw=true)

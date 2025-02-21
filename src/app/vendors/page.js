@@ -48,21 +48,25 @@ export default function VendorsPage() {
               <td>{vendor.bankAccountNo}</td>
               <td>{vendor.bankName}</td>
               <td>
-                <button onClick={() => router.push(`/vendors/edit?id=${vendor._id}`)}>edit</button>
-                <button
-                  onClick={async () => {
-                    if (confirm("do you really want to delete this vendor?")) {
-                      await fetch("/api/vendors", {
-                        method: "DELETE",
-                        body: JSON.stringify({ _id: vendor._id }),
-                        headers: { "Content-Type": "application/json" },
-                      });
-                      fetchVendors();
-                    }
-                  }}
-                >
-                  delete
-                </button>
+                {session && (
+                  <>
+                    <button onClick={() => router.push(`/vendors/edit?id=${vendor._id}`)}>edit</button>
+                    <button
+                      onClick={async () => {
+                        if (confirm("do you really want to delete this vendor?")) {
+                          await fetch("/api/vendors", {
+                            method: "DELETE",
+                            body: JSON.stringify({ _id: vendor._id }),
+                            headers: { "Content-Type": "application/json" },
+                          });
+                          fetchVendors();
+                        }
+                      }}
+                    >
+                      delete
+                    </button>
+                  </>
+                )}
               </td>
             </tr>
           ))}

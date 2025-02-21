@@ -12,4 +12,14 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 - visit `http://localhost:3000` in the browser.
 
 ## working result will look like
-![alt text](https://github.com/theoneandonlyshadow/vendor-recorder/blob/master/1.jpg?raw=true)
+- when signed in:
+![1](https://github.com/theoneandonlyshadow/vendor-recorder/blob/master/images/1.png?raw=true)
+
+- when signed in you can see vendors list
+![2](https://github.com/theoneandonlyshadow/vendor-recorder/blob/master/images/2.png?raw=true)
+
+- if not signed in:
+![3](https://github.com/theoneandonlyshadow/vendor-recorder/blob/master/images/3.png?raw=true)
+
+- if not signed in you cant edit, create or delete vendors list
+![4](https://github.com/theoneandonlyshadow/vendor-recorder/blob/master/images/4.png?raw=true)
